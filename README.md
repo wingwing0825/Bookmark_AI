@@ -12,14 +12,6 @@
 - 分類粒度可選 `Broad` 或 `Detailed`
 - 支援「套用後復原（Undo latest apply）」
 
-## 檔案結構
-- `manifest.json`: 擴充功能設定
-- `popup.html` / `popup.css` / `popup.js`: 主操作介面
-- `options.html` / `options.js`: API 與分類參數設定
-- `icon16.png`: 擴充功能圖示
-- `google-bookmark-auto-organizer-ai.md`: 專案說明文件
-- `google_bookmark_ai_discussion.md`: 討論記錄
-
 ## 如何使用
 1. 開啟 Chrome，進入 `chrome://extensions`
 2. 開啟右上角 `Developer mode`
@@ -38,10 +30,5 @@
    - 審核結果後套用
    - 若需要可執行 Undo
 
-## 打包方式（給 Chrome Web Store 以外手動分發）
-在不更動原始檔案前提下，可將專案資料夾打包成 `.zip`，供他人解壓後以 `Load unpacked` 載入。
 
-## 注意事項
-- API Key 儲存在 `chrome.storage.local`
-- 分類目標資料夾選擇會依 destination root 保留
-- 目前掃描範圍以根層書籤為主
+
